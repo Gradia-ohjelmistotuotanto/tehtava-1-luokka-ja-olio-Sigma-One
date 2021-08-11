@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 /**
   
@@ -18,20 +14,19 @@ using System.Threading.Tasks;
   
    
 **/
-namespace Elaimet
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            //Tässä luot luokasta olion
 
-            //Tulosta olion nimi ja paino
 
-            //Muuta olion nimeä ja painoa
+namespace Elaimet {
+    internal class Program {
+        private static void Main(string[] args) {
+            Hevonen hevonen = new Hevonen();
 
-            //Tulosta nyt olion nimi ja paino, jotta varmistat että muutos tapahtui
-    
+            Console.WriteLine("nimi  : " + hevonen.Nimi + "\npaino : " + hevonen.Paino + "\n");
+
+            hevonen.Nimi = "Histamiini";
+            hevonen.Paino = 89;
+
+            Console.WriteLine("nimi  : " + hevonen.Nimi + "\npaino : " + hevonen.Paino);
         }
     }
 }
